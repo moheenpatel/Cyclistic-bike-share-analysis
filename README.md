@@ -1,4 +1,4 @@
-# Cyclistic Bike Share Analysis Case Study
+# Cyclistic Bike-Share Analysis Case Study
 
 ## Introduction
 Welcome to the Cyclistic bike-share analysis case study !  
@@ -20,7 +20,7 @@ Moreno has set a clear goal: Design marketing strategies aimed at converting cas
 3. Documentation of any cleaning or manipulation of data
 4. A summary of our analysis
 5. Supporting visualizations and key findings
-6. Our Recommendations based on our analysis
+6. Recommendations based on our analysis
 
 
 ## Statement of the business task
@@ -297,10 +297,11 @@ ggplot(melted_data_weekdays, aes(x = day_of_week, y = value, fill = variable)) +
 
 
 
-### Key Findings
+### Key Findings  
+1] Compared to Annual Members, Number of Bike Trips by the Casual Riders increases drastically during the Summer season (i.e June to August) and then decreases drastically as the Winter approaches (i.e September to December).  
+2] Number of Bike Trips by the Casual Riders increases drastically during the Weekend (i.e Saturday and Sunday), while during the Weekdays (i.e Monday to Friday) the Number of trips by Casual riders remains very low. On the other hand the trend of Annual members is totally opposite, Number of Bike Trips by the Annual Members remain very low during the Weekend, while during the Weekdays the numbers of bike trips rises and remains almost constant throughout Monday to Friday.  
+3] Casual riders go for longer rides than Annual Members.  
+4] Above 3 findings suggests that Causual Riders uses the bike-share program only for leisure while the Annual members uses the bike-share program to commute to work each day.  
 
 
-
-
-
-
+## Recommendations based on my analysis
