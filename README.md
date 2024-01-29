@@ -313,7 +313,9 @@ ggplot(melted_data_weekdays, aes(x = day_of_week, y = value, fill = variable)) +
 
 Below are my few recommendations to the director of marketing for designing marketing strategies aimed at converting casual riders into annual members for company's future growth and success :  
 
-1] Company should introduce Annual Weekend Pass Membership
-2] Company should introduce Summer Membership
-3] Company should make single-ride or full-day passes costly and Annual Memberships cheaper
+1] Company should introduce Annual Weekend Pass Membership  
+2] Company should introduce Summer Membership  
+3] Company should make single-ride or full-day passes more costly and Annual Memberships cheaper  
+
+
 
