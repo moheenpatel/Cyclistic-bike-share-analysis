@@ -26,7 +26,7 @@ Moreno has set a clear goal: Design marketing strategies aimed at converting cas
 ## Statement of the business task
 Understand how casual riders and annual members use Cyclistic bikes differently. From the insights we gain from the data and the trends we observe in the data visualizations, design a new marketing strategy to convert casual riders into annual members for company's future growth and success.
 
-## Description of the data sources used for this analysis
+## Description of the data sources used in this analysis
 We will use below historical bike trips data to analyze and identify trends. Below file contains data regarding all the bike trips done by the customers in the second half (i.e Between June to December) of the year 2013. This is public data that we can use to explore how different customer types are using Cyclistic bikes.  
 
 https://divvy-tripdata.s3.amazonaws.com/Divvy_Stations_Trips_2013.zip  
@@ -75,7 +75,7 @@ So now going forward we will only use our new table **"Cyclistic_2013_Data"** fo
 - month_name
 
 
-## Summary of my analysis
+## Summary of My Data Analysis
 
 ### Data Analysis using Google Sheets / Microsoft Excel
 - Imported [Cyclistic_2013_Data.csv](https://drive.google.com/file/d/1vQ8cvs8qzLvy--BICxWY9jqrbYH35Ssm/view?usp=sharing) into a Google sheet.
@@ -159,5 +159,44 @@ ORDER BY
     weekday;
 ```
 ![8](https://github.com/moheenpatel/Cyclistic-bike-share-analysis/assets/72771390/6e30c1a2-4131-4e8a-ba5e-e7a06b7f5982)
+
+- Saved the Query Results of above 3 SQL queries in below provided CSV files respectively :  
+  [total_trips_by_month.csv](https://drive.google.com/file/d/1NM9GQgcslgkEPRKoJOchHaLHQzlxjpqD/view?usp=sharing)  
+  [total_trips_by_weekdays.csv](https://drive.google.com/file/d/1jHhexWcjlJpzyjc5RgOJycEkoEpmOMrU/view?usp=sharing)  
+  [avg_trip_duration_by_weekdays.csv](https://drive.google.com/file/d/17-pbrjiNZcRAfyMjl9n1I67oO6e5bWrQ/view?usp=sharing)
+
+
+## Supporting Visualizations and Key Findings
+
+### Data Visualization using Google Sheets / Microsoft Excel  
+
+1] Total number of Bike Trips done by Casual rider and Annual Member by Month in the second half (i.e Between June to December) of the year 2013
+![9](https://github.com/moheenpatel/Cyclistic-bike-share-analysis/assets/72771390/354616e8-04e5-480a-a1ef-5da95c84c478)
+
+2] Total number of Bike Trips done by Casual rider and Annual Member by Day of Week in the second half (i.e Between June to December) of the year 2013
+![10](https://github.com/moheenpatel/Cyclistic-bike-share-analysis/assets/72771390/5c2a66d0-84a6-4a44-b34e-0c2504e45380)
+
+3] Average Trip Duration (in mins) taken by Casual rider and Annual Member by Day of Week in the second half (i.e Between June to December) of the year 2013
+![11](https://github.com/moheenpatel/Cyclistic-bike-share-analysis/assets/72771390/7a2a72c5-5590-4f28-a944-426125857ecd)
+
+### Data Visualization using Tableau
+
+1] Total number of Bike Trips done by Casual rider and Annual Member by Month in the second half (i.e Between June to December) of the year 2013
+![total trips by month](https://github.com/moheenpatel/Cyclistic-bike-share-analysis/assets/72771390/e6993538-35c3-4844-be34-81e8e846d7cf)
+
+2] Total number of Bike Trips done by Casual rider and Annual Member by Day of Week in the second half (i.e Between June to December) of the year 2013
+![total trips by week](https://github.com/moheenpatel/Cyclistic-bike-share-analysis/assets/72771390/bc6e0bac-d0cc-4aea-8e2b-9aaa409ecabb)
+
+3] Average Trip Duration (in mins) taken by Casual rider and Annual Member by Day of Week in the second half (i.e Between June to December) of the year 2013
+![avg trip duration in min by week](https://github.com/moheenpatel/Cyclistic-bike-share-analysis/assets/72771390/8a5306b6-2a26-4fd5-9bb0-5ab6bc0598ca)
+
+
+### Data Visualization using R
+
+
+
+
+
+
 
 
