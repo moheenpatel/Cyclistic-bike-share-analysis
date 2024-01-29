@@ -5,26 +5,26 @@ Welcome to the Cyclistic bike-share analysis case study !
 Cyclistic is a fictional bike-share company in Chicago. This company offers bike share program which allows people to rent bikes to ride based on their need and convenience. The company's future success depends on maximizing the number of annual memberships of the bike share program. Using the historical bike trips data provided by the company, in this case study we will try to understand how casual riders and annual members use Cyclistic bikes differently. From the insights we gain from the data and the trends we observe in the data visualizations, we will help the company design a new marketing strategy to convert casual riders into annual members for company's future growth and success.
 
 ## About the company
-In 2013, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime.  
+In 2013, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime. Cyclistic users are more likely to ride for leisure, but about 30% use them to commute to work each day.  
 Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. One approach that helped make these things possible was the flexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships.  
 - Customers who purchase single-ride or full-day passes are referred to as **casual** riders.
 - Customers who purchase annual memberships are Cyclistic **members**.  
 
 Cyclistic’s finance analysts have concluded that annual members are much more profitable than casual riders. Although the pricing flexibility helps Cyclistic attract more customers, The director of marketing (Lily Moreno) believes that maximizing the number of annual members will be key to future growth. Rather than creating a marketing campaign that targets all-new customers, she believes there is a very good chance to convert casual riders into members. She notes that casual riders are already aware of the Cyclistic program and have chosen Cyclistic for their mobility needs.  
 
-Moreno has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do that, however, the marketing analyst team needs to better understand how annual members and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends.
+Moreno has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do that, we need to understand how casual riders and annual members use Cyclistic bikes differently. From the insights gained from the data and the trends observed in the data visualizations, we will design a new marketing strategy to convert casual riders into annual members for company's future growth and success.
 
 ## Deliverables
 1. A clear statement of the business task
 2. A description of all data sources used
 3. Documentation of any cleaning or manipulation of data
-4. A summary of our analysis
+4. A summary of analysis
 5. Supporting visualizations and key findings
-6. Recommendations based on our analysis
+6. Recommendations based on analysis
 
 
-## Statement of the business task
-Understand how casual riders and annual members use Cyclistic bikes differently. From the insights we gain from the data and the trends we observe in the data visualizations, design a new marketing strategy to convert casual riders into annual members for company's future growth and success.
+## Business Task
+Understand how casual riders and annual members use Cyclistic bikes differently. From the insights gained from the data and the trends observed in the data visualizations, design a new marketing strategy to convert casual riders into annual members for company's future growth and success.
 
 ## Description of the data sources used in this analysis
 We will use below historical bike trips data to analyze and identify trends. Below file contains data regarding all the bike trips done by the customers in the second half (i.e Between June to December) of the year 2013. This is public data that we can use to explore how different customer types are using Cyclistic bikes.  
@@ -82,7 +82,7 @@ So now going forward we will only use our new table **"Cyclistic_2013_Data"** fo
 
 ![Snapshot](https://github.com/moheenpatel/Cyclistic-bike-share-analysis/assets/72771390/d5364d1a-f399-4b65-ae55-d9d7c603fd6e)
 
-- Used **Pivot Table** to fetch below 3 details from the **"Cyclistic_2013_Data"** table
+- Used **Pivot Table** to fetch below 3 Information from the **"Cyclistic_2013_Data"** table
 
 1] Total number of Bike Trips done by Casual rider and Annual Member by Month in the second half (i.e Between June to December) of the year 2013
 ![screenshot 1](https://github.com/moheenpatel/Cyclistic-bike-share-analysis/assets/72771390/e38ef990-f8f4-4e53-902a-82e4f3d3e43c)
@@ -99,7 +99,7 @@ So now going forward we will only use our new table **"Cyclistic_2013_Data"** fo
 ![screenshot4](https://github.com/moheenpatel/Cyclistic-bike-share-analysis/assets/72771390/b1e37259-f374-4f28-be4f-e68203c38df4)
 ![screenshot5](https://github.com/moheenpatel/Cyclistic-bike-share-analysis/assets/72771390/a2bb2b40-dfc4-4fb9-bde5-b0369edf3feb)
 
-- Wrote and Executed below SQL queries to fetch following details :
+- Wrote and Executed below SQL queries to fetch following information :
   
   1] Total number of Bike Trips done by Casual rider and Annual Member by Month in the second half (i.e Between June to December) of the year 2013
 ```sql
@@ -199,7 +199,7 @@ ORDER BY
   [avg_trip_duration_by_weekdays.csv](https://drive.google.com/file/d/17-pbrjiNZcRAfyMjl9n1I67oO6e5bWrQ/view?usp=sharing)
   ![12](https://github.com/moheenpatel/Cyclistic-bike-share-analysis/assets/72771390/1f1189e9-e79b-41b9-b09a-330b52bf07cf)
 
-- Wrote and Executed below R scripts to visualize following details :
+- Wrote and Executed below R scripts to visualize following information :
 
   1] Total number of Bike Trips done by Casual rider and Annual Member by Month in the second half (i.e Between June to December) of the year 2013
 
@@ -297,7 +297,8 @@ ggplot(melted_data_weekdays, aes(x = day_of_week, y = value, fill = variable)) +
 
 
 
-### Key Findings  
+### Key Findings from my Data Analysis  
+
 1] Compared to Annual Members, Number of Bike Trips by the Casual Riders increases drastically during the Summer season (i.e June to August) and then decreases drastically as the Winter approaches (i.e September to December).  
 
 2] Number of Bike Trips by the Casual Riders increases drastically during the Weekend (i.e Saturday and Sunday), while during the Weekdays (i.e Monday to Friday) the Number of trips by Casual riders remains very low. On the other hand the trend of Annual members is totally opposite, Number of Bike Trips by the Annual Members remain very low during the Weekend, while during the Weekdays the numbers of bike trips rises and remains almost constant throughout Monday to Friday.  
@@ -308,4 +309,11 @@ ggplot(melted_data_weekdays, aes(x = day_of_week, y = value, fill = variable)) +
 
 
 
-## Recommendations based on my analysis
+## My Recommendations based on the Analysis
+
+Below are my few recommendations to the director of marketing for designing marketing strategies aimed at converting casual riders into annual members for company's future growth and success :  
+
+1] Company should introduce Annual Weekend Pass Membership
+2] Company should introduce Summer Membership
+3] Company should make single-ride or full-day passes costly and Annual Memberships cheaper
+
