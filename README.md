@@ -193,7 +193,111 @@ ORDER BY
 
 ### Data Visualization using R
 
+- Imported below 3 CSV files in "Cyclistic bike-share analysis project" on RStudio Cloud (Posit Cloud) :  
+  [total_trips_by_month.csv](https://drive.google.com/file/d/1NM9GQgcslgkEPRKoJOchHaLHQzlxjpqD/view?usp=sharing)  
+  [total_trips_by_weekdays.csv](https://drive.google.com/file/d/1jHhexWcjlJpzyjc5RgOJycEkoEpmOMrU/view?usp=sharing)  
+  [avg_trip_duration_by_weekdays.csv](https://drive.google.com/file/d/17-pbrjiNZcRAfyMjl9n1I67oO6e5bWrQ/view?usp=sharing)
+  ![12](https://github.com/moheenpatel/Cyclistic-bike-share-analysis/assets/72771390/1f1189e9-e79b-41b9-b09a-330b52bf07cf)
 
+- Wrote and Executed below R scripts to visualize following details :
+
+  1] Total number of Bike Trips done by Casual rider and Annual Member by Month in the second half (i.e Between June to December) of the year 2013
+
+```r
+install.packages("ggplot2")
+install.packages("tidyverse")
+install.packages("reshape2")
+
+# Load the libraries
+library(ggplot2)
+library(reshape2)
+
+# Read the CSV file
+bike_data <- read.csv("total_trips_by_month.csv")
+
+# Melt the data frame for easier plotting, excluding total_trips
+melted_data <- melt(bike_data[, -ncol(bike_data)], id.vars = c("month", "month_name"))
+
+# Reorder the levels of the month_name factor based on the order in the CSV data
+melted_data$month_name <- factor(melted_data$month_name, levels = unique(bike_data$month_name))
+
+# Create a line chart for trips by month and user type
+ggplot(melted_data, aes(x = month_name, y = value, color = variable, group = variable)) +
+  geom_line(size = 1) +
+  labs(title = "Total No. of Trips by Month",
+       x = "Month",
+       y = "Total No. of Trips",
+       color = "User Type") +
+  theme_minimal()
+```
+
+**Result :**  
+
+![13](https://github.com/moheenpatel/Cyclistic-bike-share-analysis/assets/72771390/67579bb4-a56e-47a3-8059-bb81969046db)  
+
+
+
+  2] Total number of Bike Trips done by Casual rider and Annual Member by Day of Week in the second half (i.e Between June to December) of the year 2013  
+
+```r
+# Install and load necessary libraries
+# install.packages(c("ggplot2", "reshape2"))
+
+# Load the libraries
+library(ggplot2)
+library(reshape2)
+
+# Read the CSV file
+total_trips_by_weekdays <- read.csv("total_trips_by_weekdays.csv")
+
+# Melt the data frame for easier plotting, excluding total_trips
+melted_data_weekdays <- melt(total_trips_by_weekdays[, -ncol(total_trips_by_weekdays)], id.vars = c("weekday", "day_of_week"))
+
+# Create a line chart for trips by weekday and user type
+ggplot(melted_data_weekdays, aes(x = reorder(day_of_week, weekday), y = value, color = variable, group = variable)) +
+  geom_line(size = 1) +
+  labs(title = "Total No. of Trips by Week",
+       x = "Weekday",
+       y = "Total No. of Trips",
+       color = "User Type") +
+  theme_minimal()
+```
+
+**Result :**  
+
+![14](https://github.com/moheenpatel/Cyclistic-bike-share-analysis/assets/72771390/4ac494db-b017-4ac8-875e-5049efdcd86d)  
+
+
+  
+  3] Average Trip Duration (in mins) taken by Casual rider and Annual Member by Day of Week in the second half (i.e Between June to December) of the year 2013  
+
+```r
+# Read the CSV file
+avg_trip_duration_by_weekdays <- read.csv("avg_trip_duration_by_weekdays.csv")
+
+# Melt the data frame for easier plotting, excluding total_trips
+melted_data_weekdays <- melt(avg_trip_duration_by_weekdays, id.vars = c("weekday", "day_of_week"))
+
+# Order the melted data based on the order in the CSV file
+melted_data_weekdays$day_of_week <- factor(melted_data_weekdays$day_of_week, levels = avg_trip_duration_by_weekdays$day_of_week)
+
+# Create a grouped bar chart for average trip duration by weekday and user type
+ggplot(melted_data_weekdays, aes(x = day_of_week, y = value, fill = variable)) +
+  geom_bar(stat = "identity", position = "dodge", color = "black") +
+  labs(title = "Avg. Trip Duration (in mins) by Weekday",
+       x = "Weekday",
+       y = "Avg. Trip Duration (in mins)",
+       fill = "User Type") +
+  theme_minimal()
+```
+
+**Result :**  
+
+![15](https://github.com/moheenpatel/Cyclistic-bike-share-analysis/assets/72771390/ae94b86b-fa5f-49cf-affa-57daefd7f2c4)  
+
+
+
+### Key Findings
 
 
 
