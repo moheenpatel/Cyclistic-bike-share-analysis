@@ -4,6 +4,22 @@
 Welcome to the Cyclistic bike-share analysis case study !  
 Cyclistic is a fictional bike-share company in Chicago. This company offers bike share program which allows people to rent bikes to ride based on their need and convenience. The company's future success depends on maximizing the number of annual memberships of the bike share program. Using the historical bike trips data provided by the company, in this case study we will try to understand how casual riders and annual members use Cyclistic bikes differently. From the insights we gain from the data and the trends we observe in the data visualizations, we will help the company design a new marketing strategy to convert casual riders into annual members for company's future growth and success.
 
+## Table of Content
+- [About the company](#about-the-company)
+- [Business Task](#business-task)
+- [Description of the data sources used in this analysis](#description-of-the-data-sources-used-in-this-analysis)
+- [Tools and Technologies used in this analysis](#tools-and-technologies-used-in-this-analysis)
+- [Documentation of cleaning or manipulation of data](#documentation-of-cleaning-or-manipulation-of-data)
+- [Summary of My Data Analysis](#summary-of-my-data-analysis)
+    - [Data Analysis using Google Sheets / Microsoft Excel](#data-analysis-using-google-sheets--microsoft-excel)
+    - [Data Analysis using SQL and Google BigQuery](#data-analysis-using-sql-and-google-bigquery)
+- [Supporting Visualizations and Key Findings](#supporting-visualizations-and-key-findings)
+    - [Data Visualization using Google Sheets / Microsoft Excel](#data-visualization-using-google-sheets--microsoft-excel)
+    - [Data Visualization using Tableau](#data-visualization-using-tableau)
+    - [Data Visualization using R](#data-visualization-using-r)
+    - [Key Findings from my Data Analysis](#key-findings-from-my-data-analysis)
+- [My Recommendations based on the Analysis](#my-recommendations-based-on-the-analysis)
+
 ## About the company
 In 2013, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime. Cyclistic users are more likely to ride for leisure, but about 30% use them to commute to work each day.  
 
