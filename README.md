@@ -17,7 +17,7 @@ Cyclistic is a fictional bike-share company in Chicago. This company offers bike
     - [Data Visualization using Google Sheets / Microsoft Excel](#data-visualization-using-google-sheets--microsoft-excel)
     - [Data Visualization using Tableau](#data-visualization-using-tableau)
     - [Data Visualization using R](#data-visualization-using-r)
-    - [Key Findings from my Data Analysis](#key-findings-from-my-data-analysis)
+    - [Key Findings](#key-findings)
 - [My Recommendations based on the Analysis](#my-recommendations-based-on-the-analysis)
 
 ## About the company
@@ -322,7 +322,7 @@ ggplot(melted_data_weekdays, aes(x = day_of_week, y = value, fill = variable)) +
 
 
 
-### Key Findings from my Data Analysis  
+### Key Findings 
 
 1] Compared to Annual Members, Number of Bike Trips by the Casual Riders increases drastically during the Summer season (i.e June to August) and then decreases drastically as the Winter approaches (i.e September to December).  
 
