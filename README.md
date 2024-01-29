@@ -34,6 +34,14 @@ https://divvy-tripdata.s3.amazonaws.com/Divvy_Stations_Trips_2013.zip
 
 ( **Note** : The dataset have a different name because Cyclistic is a fictional company. For the purposes of this case study, the dataset is appropriate and will enable us to answer the business questions. The data has been made available by Lyft Bikes and Scooters, LLC under this [**License**](https://divvybikes.com/data-license-agreement) ).
 
+## Tools and Technologies used in this analysis
+1] Google Sheets / Microsoft Excel  
+2] SQL  
+3] Google BigQuery  
+4] Tableau  
+5] R programming Language  
+6] RStudio (Posit Cloud)
+
 ## Documentation of cleaning or manipulation of data
 Below is the Main Table which contains data regarding all the bike trips done by the customers in the second half (i.e Between June to December) of the year 2013 :  
 [Divvy_Trips_2013.csv](https://drive.google.com/file/d/13pX4uFSOib5Olhm8voSLa1RT7aLs_5Pv/view?usp=sharing)  
